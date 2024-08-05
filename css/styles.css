@@ -1,21 +1,81 @@
-body {
-    font-family: sans-serif;
-    color: #000;
-    background-color: #fff;
-}
-
-a,
-a:visited,
-a:hover,
-a:focus,
-a:active {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul,
-ol {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+    body {
+        font-family: Roboto, sans-serif;
+        color: #434455;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+    
+    a,
+    a:visited,
+    a:hover,
+    a:focus,
+    a:active {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    ul,
+    ol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+    }
+    
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    li {
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li {
+        margin-left: 20px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+    }
+    
+    .filter-buttons {
+        text-align: center;
+        margin: 100px auto 50px auto;
+    }
+    
+    .filter-buttons button {
+        background-color: #f4f4fe;
+        border: 1px solid #ddd;
+        padding: 10px 20px;
+        margin: 0 10px;
+        cursor: pointer;
+        color: #404bbf;
+        border-radius: 3px;
+        font-family: inherit;
+    }
+    
+    .filter-buttons button.active {
+        background-color: #4A90E2;
+        color: #fff;
+        border: none;
+    }
+    
+    button:hover {
+        background-color: #404BBF;
+        color: #fff;
+    }
