@@ -35,6 +35,7 @@
     li {
         text-decoration: none;
         list-style: none;
+        display: flex;
     }
     
     nav ul {
@@ -46,11 +47,13 @@
     
     nav ul li {
         margin-left: 20px;
+        text-align: left;
     }
     
     nav ul li a {
         text-decoration: none;
         color: #333;
+        font-family: inherit;
     }
     
     .filter-buttons {
@@ -78,4 +81,45 @@
     button:hover {
         background-color: #404BBF;
         color: #fff;
+    }
+    
+    .portfolio-img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        gap: 15px;
+    }
+    
+    .portfolio-img>div {
+        flex: 0 1 calc(33.33% - 15px);
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        border: #434455;
+    }
+    
+    .portfolio-img h3,
+    .portfolio-img p {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .portfolio-img img {
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+    
+    .contact-info {
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .left-side {
+        display: flex;
+        align-items: start;
     }
