@@ -6,6 +6,25 @@
                 padding: 0;
             }
             
+            header {
+                font-family: inherit;
+                background-color: inherit;
+            }
+            
+            footer a {
+                font-family: Raleway, sans-serfi;
+            }
+            
+            header a {
+                font-family: Raleway, sans-serfi;
+                height: 72px;
+                line-height: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            
             a,
             a:visited,
             a:hover,
@@ -13,6 +32,10 @@
             a:active {
                 text-decoration: none;
                 color: inherit;
+            }
+            
+            p {
+                line-height: 24px;
             }
             
             h1 {
@@ -50,9 +73,8 @@
             }
             
             .container {
-                width: 90%;
                 margin: 0 auto;
-                max-width: 1200px;
+                max-width: 1440px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -64,22 +86,29 @@
                 display: flex;
             }
             
+            nav .container {
+                display: flex;
+            }
+            
             nav ul {
                 list-style: none;
                 display: flex;
                 margin: 0;
                 padding: 0;
+                gap: 20px;
             }
             
             nav ul li {
-                margin-left: 20px;
-                text-align: left;
+                margin: 0;
+                padding: 0;
             }
             
             nav ul li a {
                 text-decoration: none;
                 color: #333;
                 font-family: inherit;
+                margin: 0;
+                padding: 0;
             }
             
             .filter-buttons {
@@ -90,7 +119,7 @@
             .filter-buttons button {
                 background-color: #f4f4fe;
                 border: 1px solid #ddd;
-                padding: 10px 20px;
+                padding: 12px 24px 12px 24px;
                 margin: 0 10px;
                 cursor: pointer;
                 color: #404bbf;
@@ -102,11 +131,13 @@
                 background-color: #4A90E2;
                 color: #fff;
                 border: none;
+                box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
             }
             
             button:hover {
                 background-color: #404BBF;
                 color: #fff;
+                box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
             }
             
             .portfolio-img {
@@ -152,39 +183,38 @@
             
             footer {
                 background-color: #2e2f43;
-                /* Ciemne tło */
-                /* Wewnętrzny odstęp */
                 color: #ffffff;
-                /* Biały kolor tekstu */
-                /* Wyśrodkowanie tekstu */
                 font-family: inherit;
-                width: 100%;
-                min-height: 300px;
+                width: auto;
+                height: 312px;
+                margin: 0;
+                padding: 0;
             }
             
-            footer>p {
+            footer p {
                 display: block;
-                /* Maksymalna szerokość tekstu */
-                line-height: 1.6;
-                /* Wysokość linii dla lepszej czytelności */
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
                 text-align: left;
                 color: #f4f4fc;
-                padding: 0 0 0 20px;
-                margin: 30px;
-                display: block;
                 max-width: 280px;
             }
             
-            footer>a {
+            footer a {
                 display: block;
-                /* Maksymalna szerokość tekstu */
-                line-height: 1.6;
-                /* Wysokość linii dla lepszej czytelności */
+                line-height: 24px;
+                font-size: 16px;
                 text-align: left;
                 color: #f4f4fc;
-                padding: 80px 0 0 20px;
-                margin: 30px;
-                display: block;
+                padding-top: 80px;
+            }
+            
+            footer .container {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
             }
             
             .hero {
@@ -199,13 +229,9 @@
                 margin: 0;
                 display: flex;
                 justify-content: space-between;
-                /* Distribute space evenly between items */
                 align-items: flex-start;
-                /* Align items to the start of the container */
                 width: 100%;
-                /* Ensure the team section takes the full width of the container */
                 flex-wrap: nowrap;
-                /* Prevent wrapping, keeping all items on one line */
             }
             
             .team li {
@@ -215,6 +241,10 @@
                 flex-direction: column;
                 align-items: center;
                 max-width: calc(100% / 4 - 20px);
+                background-color: white;
+                line-height: 24px;
+                box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+                border-radius: 0px, 0px, 4px, 4px;
             }
             
             .team img {
@@ -227,17 +257,15 @@
             
             .team h3 {
                 margin: 10px 0 5px 0;
-                /* Add some margin between the image and the heading */
-                font-size: 1.2em;
+                font-size: 20px;
+                padding-top: 20px;
             }
             
             .team p {
                 margin: 0;
-                /* Remove margin for a tight fit below the heading */
                 font-size: 1em;
-                /* Adjust the font size if needed */
                 color: #666;
-                /* Optional: add a color to distinguish the text */
+                padding-bottom: 20px;
             }
             
             .light-bg {
@@ -248,4 +276,8 @@
             
             section {
                 margin-top: 120px;
+            }
+            
+            .logo-color-web {
+                color: #4D5AE5;
             }
