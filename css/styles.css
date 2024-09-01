@@ -222,7 +222,7 @@
                 height: 600px;
                 background-color: #2E2F42;
                 position: relative;
-                background-image: url(/images/people-office.jpg);
+                background-image: url('/images/people-office.jpg');
                 background-repeat: no-repeat;
             }
             
