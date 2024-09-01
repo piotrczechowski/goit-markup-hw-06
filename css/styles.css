@@ -1,162 +1,251 @@
-    body {
-        font-family: Roboto, sans-serif;
-        color: #434455;
-        background-color: #fff;
-        margin: 0;
-        padding: 0;
-    }
-    
-    a,
-    a:visited,
-    a:hover,
-    a:focus,
-    a:active {
-        text-decoration: none;
-        color: inherit;
-    }
-    
-    ul,
-    ol {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        text-decoration: none;
-    }
-    
-    .container {
-        width: 90%;
-        margin: 0 auto;
-        max-width: 1200px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    li {
-        text-decoration: none;
-        list-style: none;
-        display: flex;
-    }
-    
-    nav ul {
-        list-style: none;
-        display: flex;
-        margin: 0;
-        padding: 0;
-    }
-    
-    nav ul li {
-        margin-left: 20px;
-        text-align: left;
-    }
-    
-    nav ul li a {
-        text-decoration: none;
-        color: #333;
-        font-family: inherit;
-    }
-    
-    .filter-buttons {
-        text-align: center;
-        margin: 100px auto 50px auto;
-    }
-    
-    .filter-buttons button {
-        background-color: #f4f4fe;
-        border: 1px solid #ddd;
-        padding: 10px 20px;
-        margin: 0 10px;
-        cursor: pointer;
-        color: #404bbf;
-        border-radius: 3px;
-        font-family: inherit;
-    }
-    
-    .filter-buttons button.active {
-        background-color: #4A90E2;
-        color: #fff;
-        border: none;
-    }
-    
-    button:hover {
-        background-color: #404BBF;
-        color: #fff;
-    }
-    
-    .portfolio-img {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
-        gap: 15px;
-    }
-    
-    .portfolio-img>div {
-        flex: 0 1 calc(33.33% - 15px);
-        box-sizing: border-box;
-        margin-bottom: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: left;
-    }
-    
-    .portfolio-img h3,
-    .portfolio-img p {
-        width: 100%;
-        margin: 10px 0;
-        ;
-    }
-    
-    .portfolio-img img {
-        width: 100%;
-        height: auto;
-        align-items: center;
-    }
-    
-    .contact-info {
-        display: flex;
-        align-items: flex-end;
-    }
-    
-    .left-side {
-        display: flex;
-        align-items: start;
-    }
-    
-    footer {
-        background-color: #2e2f43;
-        /* Ciemne tło */
-        /* Wewnętrzny odstęp */
-        color: #ffffff;
-        /* Biały kolor tekstu */
-        /* Wyśrodkowanie tekstu */
-        font-family: inherit;
-        width: 100%;
-        min-height: 300px;
-    }
-    
-    footer>p {
-        display: block;
-        /* Maksymalna szerokość tekstu */
-        line-height: 1.6;
-        /* Wysokość linii dla lepszej czytelności */
-        text-align: left;
-        color: #f4f4fc;
-        padding: 0 0 0 20px;
-        margin: 30px;
-        display: block;
-        max-width: 280px;
-    }
-    
-    footer>a {
-        display: block;
-        /* Maksymalna szerokość tekstu */
-        line-height: 1.6;
-        /* Wysokość linii dla lepszej czytelności */
-        text-align: left;
-        color: #f4f4fc;
-        padding: 80px 0 0 20px;
-        margin: 30px;
-        display: block;
-    }
+            body {
+                font-family: Roboto, sans-serif;
+                color: #434455;
+                background-color: #fff;
+                margin: 0;
+                padding: 0;
+            }
+            
+            a,
+            a:visited,
+            a:hover,
+            a:focus,
+            a:active {
+                text-decoration: none;
+                color: inherit;
+            }
+            
+            h1 {
+                font-family: inherit;
+                color: white;
+                font-weight: 700;
+                font-size: 56px;
+                line-height: 60px;
+                padding-top: 240px;
+                text-align: center;
+                margin: inherit;
+            }
+            
+            h2 {
+                font-family: inherit;
+                color: #2E2F42;
+                font-size: 36px;
+                line-height: 40px;
+                text-align: center;
+                padding: 60px;
+            }
+            
+            h3 {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+            }
+            
+            ul,
+            ol {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                text-decoration: none;
+            }
+            
+            .container {
+                width: 90%;
+                margin: 0 auto;
+                max-width: 1200px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            li {
+                text-decoration: none;
+                list-style: none;
+                display: flex;
+            }
+            
+            nav ul {
+                list-style: none;
+                display: flex;
+                margin: 0;
+                padding: 0;
+            }
+            
+            nav ul li {
+                margin-left: 20px;
+                text-align: left;
+            }
+            
+            nav ul li a {
+                text-decoration: none;
+                color: #333;
+                font-family: inherit;
+            }
+            
+            .filter-buttons {
+                text-align: center;
+                margin: 100px auto 50px auto;
+            }
+            
+            .filter-buttons button {
+                background-color: #f4f4fe;
+                border: 1px solid #ddd;
+                padding: 10px 20px;
+                margin: 0 10px;
+                cursor: pointer;
+                color: #404bbf;
+                border-radius: 3px;
+                font-family: inherit;
+            }
+            
+            .filter-buttons button.active {
+                background-color: #4A90E2;
+                color: #fff;
+                border: none;
+            }
+            
+            button:hover {
+                background-color: #404BBF;
+                color: #fff;
+            }
+            
+            .portfolio-img {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+                gap: 15px;
+            }
+            
+            .portfolio-img>div {
+                flex: 0 1 calc(33.33% - 15px);
+                box-sizing: border-box;
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: left;
+            }
+            
+            .portfolio-img h3,
+            .portfolio-img p {
+                width: 100%;
+                margin: 10px 0;
+                ;
+            }
+            
+            .portfolio-img img {
+                width: 100%;
+                height: auto;
+                align-items: center;
+            }
+            
+            .contact-info {
+                display: flex;
+                align-items: flex-end;
+            }
+            
+            .left-side {
+                display: flex;
+                align-items: start;
+            }
+            
+            footer {
+                background-color: #2e2f43;
+                /* Ciemne tło */
+                /* Wewnętrzny odstęp */
+                color: #ffffff;
+                /* Biały kolor tekstu */
+                /* Wyśrodkowanie tekstu */
+                font-family: inherit;
+                width: 100%;
+                min-height: 300px;
+            }
+            
+            footer>p {
+                display: block;
+                /* Maksymalna szerokość tekstu */
+                line-height: 1.6;
+                /* Wysokość linii dla lepszej czytelności */
+                text-align: left;
+                color: #f4f4fc;
+                padding: 0 0 0 20px;
+                margin: 30px;
+                display: block;
+                max-width: 280px;
+            }
+            
+            footer>a {
+                display: block;
+                /* Maksymalna szerokość tekstu */
+                line-height: 1.6;
+                /* Wysokość linii dla lepszej czytelności */
+                text-align: left;
+                color: #f4f4fc;
+                padding: 80px 0 0 20px;
+                margin: 30px;
+                display: block;
+            }
+            
+            .hero {
+                width: auto;
+                height: 600px;
+                background-color: #2E2F42;
+            }
+            
+            .team {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: space-between;
+                /* Distribute space evenly between items */
+                align-items: flex-start;
+                /* Align items to the start of the container */
+                width: 100%;
+                /* Ensure the team section takes the full width of the container */
+                flex-wrap: nowrap;
+                /* Prevent wrapping, keeping all items on one line */
+            }
+            
+            .team li {
+                flex: 1;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                max-width: calc(100% / 4 - 20px);
+            }
+            
+            .team img {
+                width: 100%;
+                height: auto;
+                display: block;
+                margin: auto;
+                gap: 32px;
+            }
+            
+            .team h3 {
+                margin: 10px 0 5px 0;
+                /* Add some margin between the image and the heading */
+                font-size: 1.2em;
+            }
+            
+            .team p {
+                margin: 0;
+                /* Remove margin for a tight fit below the heading */
+                font-size: 1em;
+                /* Adjust the font size if needed */
+                color: #666;
+                /* Optional: add a color to distinguish the text */
+            }
+            
+            .light-bg {
+                background-color: #F4F4FD;
+                height: 732px;
+                margin-top: 120px;
+            }
+            
+            section {
+                margin-top: 120px;
+            }
