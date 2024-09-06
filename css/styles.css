@@ -3,7 +3,7 @@ body {
     color: #434455;
     background-color: #fff;
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
 header {
@@ -210,7 +210,6 @@ footer {
     height: 600px;
     background-color: #2E2F42;
     position: relative;
-    box-sizing: border-box;
 }
 
 .hero:before {
@@ -233,17 +232,18 @@ footer {
     margin: 0;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
+}
+
+.team ul {
+    display: flex;
+    flex-direction: column;
 }
 
 .team li {
-    flex: 1;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: calc(100% / 4 - 20px);
     background-color: white;
     line-height: 24px;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
@@ -253,9 +253,9 @@ footer {
 .team img {
     width: 100%;
     height: auto;
-    display: block;
     margin: auto;
     gap: 32px;
+    display: flex;
 }
 
 .team h3 {
@@ -273,9 +273,9 @@ footer {
 
 .light-bg {
     background-color: #F4F4FD;
-    height: 732px;
-    margin-top: 120px;
     padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
 section {
@@ -320,21 +320,27 @@ section {
 }
 
 .solution-box {
-    height: 112px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.solution-box-img {
     background-color: #F4F4FD;
+    height: 112px;
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .solutions {
-    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
-.solution-box img {
-    height: 100%;
-    display: flex;
-    justify-content: center;
+.solutions h3 {
+    text-align: left;
 }
 
 .customer {
@@ -343,8 +349,8 @@ section {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    box-sizing: border-box;
     padding-bottom: 120px;
+    flex-direction: row;
 }
 
 .customers-box {
@@ -548,11 +554,34 @@ textarea {
     .contact-info {
         display: none;
     }
-    body {
-        background-color: red;
-    }
     .logo {
         overflow: hidden;
+    }
+    .solutions {
+        flex-wrap: wrap;
+    }
+    .solution-box h3 {
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        line-height: 40 px;
+        padding: 0;
+    }
+    .solution-box-img {
+        display: none;
+    }
+    .solution-box p {
+        padding: 0;
+        margin: 0;
+    }
+    .doing {
+        display: none;
+    }
+    .team {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
     }
 }
 
