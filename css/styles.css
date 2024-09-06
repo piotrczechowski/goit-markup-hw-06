@@ -466,6 +466,8 @@ footer input[type="email"] {
     margin-bottom: 15px;
     padding: 5px;
     background-color: #fafafa;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .input-container .icon {
@@ -501,6 +503,9 @@ textarea {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
 }
 
 .checkbox-container input[type="checkbox"] {
