@@ -93,6 +93,7 @@ ol {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 li {
@@ -129,10 +130,13 @@ nav ul li a {
     text-align: center;
     margin: 100px auto 50px auto;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .filter-buttons button {
-    background-color: #404bbf;
+    background-color: #E7E9FC;
     border: none;
     padding: 12px 24px 12px 24px;
     margin: 0 10px;
@@ -140,6 +144,8 @@ nav ul li a {
     color: #ddd;
     border-radius: 3px;
     font-family: inherit;
+    color: #404BBF;
+    ;
 }
 
 .filter-buttons button.active {
@@ -160,18 +166,17 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
-    gap: 15px;
+    flex-direction: row;
 }
 
 .portfolio-img>div {
-    flex: 0 1 calc(33.33% - 15px);
     box-sizing: border-box;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: left;
+    display: flex;
 }
 
 .portfolio-img h3,
@@ -557,6 +562,50 @@ textarea {
     display: none;
 }
 
+@media (min-width: 601px) and (max-width: 1024px) {
+    .customer {
+        flex-wrap: wrap;
+    }
+    .customers-box {
+        width: 25%;
+    }
+    .team {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .doing-h2 {
+        display: none;
+    }
+    footer {
+        flex-wrap: wrap;
+    }
+    .footer-left {
+        max-width: 50%;
+    }
+    footer form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .footer-right {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .burger {
+        display: none;
+    }
+    .portfolio-img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    }
+}
+
 
 /* Mobile */
 
@@ -639,42 +688,10 @@ textarea {
     .burger {
         display: flex;
     }
-}
-
-@media (min-width: 601px) and (max-width: 1024px) {
-    .customer {
-        flex-wrap: wrap;
-    }
-    .customers-box {
-        width: 25%;
-    }
-    .team {
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    .doing-h2 {
-        display: none;
-    }
-    footer {
-        flex-wrap: wrap;
-    }
-    .footer-left {
-        max-width: 50%;
-    }
-    footer form {
+    .portfolio-img {
         display: flex;
-        align-items: center;
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 10px;
-    }
-    .footer-right {
-        width: 100%;
-        max-width: 500px;
-        margin: 0 auto;
-        text-align: center;
-    }
-    .burger {
-        display: none;
+        flex-direction: row;
     }
 }
