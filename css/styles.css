@@ -553,6 +553,13 @@ textarea {
     flex-direction: column;
 }
 
+.burger {
+    display: none;
+}
+
+
+/* Mobile */
+
 @media (max-width: 600px) {
     nav {
         display: none;
@@ -629,6 +636,9 @@ textarea {
     .customer {
         flex-wrap: wrap;
     }
+    .burger {
+        display: flex;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -663,5 +673,8 @@ textarea {
         max-width: 500px;
         margin: 0 auto;
         text-align: center;
+    }
+    .burger {
+        display: none;
     }
 }
