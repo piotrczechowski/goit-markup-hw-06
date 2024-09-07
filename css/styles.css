@@ -2,7 +2,6 @@ body {
     font-family: Roboto, sans-serif;
     color: #434455;
     background-color: #fff;
-    margin: 20px;
 }
 
 header {
@@ -633,9 +632,6 @@ textarea {
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
-    body {
-        background-color: lightblue;
-    }
     .customer {
         flex-wrap: wrap;
     }
@@ -649,5 +645,23 @@ textarea {
     }
     .doing-h2 {
         display: none;
+    }
+    footer {
+        flex-wrap: wrap;
+    }
+    .footer-left {
+        max-width: 50%;
+    }
+    footer form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .footer-right {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
     }
 }
